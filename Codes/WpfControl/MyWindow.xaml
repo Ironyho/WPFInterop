@@ -1,0 +1,21 @@
+﻿<Window x:Class="WpfControl.MyWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" WindowStyle="None" AllowsTransparency="True" Background="Transparent"
+        Title="MyWindow" Height="300" Width="500" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <Style TargetType="{x:Type TextBlock}">
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="IsHitTestVisible" Value="False"/>
+        </Style>
+    </Window.Resources>
+    <Border CornerRadius="16" Background="#7787CEFA">
+        <StackPanel Orientation="Vertical" VerticalAlignment="Center">
+            <TextBlock Text="This is a WPF custom window." FontSize="30" Foreground="LightSlateGray"/>
+            <TextBlock Text="Drag to move  &amp;  Double click to close" FontSize="16" Foreground="LightSlateGray"/> 
+        </StackPanel>
+    </Border>
+</Window>
