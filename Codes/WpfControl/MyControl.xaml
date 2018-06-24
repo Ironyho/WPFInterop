@@ -3,51 +3,62 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             mc:Ignorable="d" d:DesignHeight="450" d:DesignWidth="800"
-             Background="LightGoldenrodYellow">
+             mc:Ignorable="d" d:DesignHeight="350" d:DesignWidth="600"
+             Background="LightYellow">
     <UserControl.Resources>
         <Style  TargetType="{x:Type Rectangle}">
-            <Setter Property="Margin" Value="10"/>
+            <Setter Property="Margin" Value="10 5"/>
             <Setter Property="Height" Value="30"/>
-            <Setter Property="Width" Value="200"/>
+            <Setter Property="Width" Value="150"/>
         </Style>
         <Style TargetType="{x:Type Button}">
-            <Setter Property="Margin" Value="10"/>
+            <Setter Property="Margin" Value="0 10"/>
             <Setter Property="Height" Value="30"/>
         </Style>
     </UserControl.Resources>
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
-        <ListBox Grid.Column="0">
-            <Rectangle Fill="LightPink"/>
-            <Rectangle Fill="LightGray"/>
-            <Rectangle Fill="LightSalmon"/>
-            <Rectangle Fill="LightGreen"/>
-            <Rectangle Fill="LightSeaGreen"/>
-            <Rectangle Fill="LightSlateGray"/>
-            <Rectangle Fill="LightBlue"/>
-            <Rectangle Fill="LightYellow"/>
-            <Rectangle Fill="LightCoral"/>
-            <Rectangle Fill="LightCyan"/>
-            <Rectangle Fill="LightPink"/>
-            <Rectangle Fill="LightGray"/>
-            <Rectangle Fill="LightSalmon"/>
-            <Rectangle Fill="LightGreen"/>
-            <Rectangle Fill="LightSeaGreen"/>
-            <Rectangle Fill="LightSlateGray"/>
-            <Rectangle Fill="LightBlue"/>
-            <Rectangle Fill="LightYellow"/>
-            <Rectangle Fill="LightCoral"/>
-            <Rectangle Fill="LightCyan"/>
-        </ListBox>
-        <GridSplitter Grid.Column="1"/>
-        <StackPanel Orientation="Vertical" Grid.Column="2" VerticalAlignment="Center">
-            <Button Content="Show Message Box" x:Name="MessageButton" Click="MessageButton_OnClick"/>
-            <Button Content="Show WPF Window" x:Name="WindowButton" Click="WindowButton_OnClick"/>
-        </StackPanel>
-    </Grid>
+    <GroupBox Header="WPF" Margin="10" Padding="10" BorderThickness="1" BorderBrush="LightSlateGray">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <ListBox Grid.Column="0">
+                <Rectangle Fill="LightPink"/>
+                <Rectangle Fill="LightGray"/>
+                <Rectangle Fill="LightSalmon"/>
+                <Rectangle Fill="LightGreen"/>
+                <Rectangle Fill="LightSeaGreen"/>
+                <Rectangle Fill="LightSlateGray"/>
+                <Rectangle Fill="LightBlue"/>
+                <Rectangle Fill="LightYellow"/>
+                <Rectangle Fill="LightCoral"/>
+                <Rectangle Fill="LightCyan"/>
+                <Rectangle Fill="LightPink"/>
+                <Rectangle Fill="LightGray"/>
+                <Rectangle Fill="LightSalmon"/>
+                <Rectangle Fill="LightGreen"/>
+                <Rectangle Fill="LightSeaGreen"/>
+                <Rectangle Fill="LightSlateGray"/>
+                <Rectangle Fill="LightBlue"/>
+                <Rectangle Fill="LightYellow"/>
+                <Rectangle Fill="LightCoral"/>
+                <Rectangle Fill="LightCyan"/>
+            </ListBox>
+            <GridSplitter Grid.Column="1"/>
+            <StackPanel Orientation="Vertical" Grid.Column="2" VerticalAlignment="Center" Margin="10 0 0 0">
+                <Button Content="Show Message Box" x:Name="MessageButton" Click="MessageButton_OnClick"/>
+                <Button Content="Show WPF Window" x:Name="WindowButton" Click="WindowButton_OnClick"/>
+                <Grid Margin="0 50 0 10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="Message to Send:    "/>
+                    <TextBox x:Name="MessageTextBox" Text="Hi, I'm WPF." Grid.Column="1"/>
+                </Grid>
+                <Button Content="Send Message" x:Name="SendButton" Click="SendButton_OnClick"/>
+            </StackPanel>
+        </Grid>
+    </GroupBox>
 </UserControl>
