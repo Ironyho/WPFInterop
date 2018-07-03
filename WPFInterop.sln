@@ -7,9 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfControl", "Codes\WpfCont
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Win32App_CLR", "Codes\Win32App\Win32App.vcxproj", "{FB7A16B4-6232-4472-9306-FEA03D6F864D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormControl", "WinFormControl\WinFormControl.csproj", "{17D84966-A1F9-4AA4-AE79-3E59B4237E34}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormControl", "Codes\WinFormControl\WinFormControl.csproj", "{17D84966-A1F9-4AA4-AE79-3E59B4237E34}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MFCApp", "MFCApp\MFCApp.vcxproj", "{C0F4A43F-125F-4734-8A3B-5ACC0C0C7679}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MFCApp", "Codes\MFCApp\MFCApp.vcxproj", "{C0F4A43F-125F-4734-8A3B-5ACC0C0C7679}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

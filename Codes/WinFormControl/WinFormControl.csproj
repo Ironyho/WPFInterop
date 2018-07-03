@@ -63,7 +63,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Codes\WpfControl\WpfControl.csproj">
+    <ProjectReference Include="..\WpfControl\WpfControl.csproj">
       <Project>{9f8f0def-c5ed-4f45-b50e-29a903422ac0}</Project>
       <Name>WpfControl</Name>
     </ProjectReference>
