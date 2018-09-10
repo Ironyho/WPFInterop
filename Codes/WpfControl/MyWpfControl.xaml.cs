@@ -5,12 +5,12 @@ namespace WpfControl
     /// <summary>
     /// Interaction logic for UserControl1.xaml
     /// </summary>
-    public partial class MyControl
+    public partial class MyWpfControl
     {
         public delegate void MessageHandler(object sender, string message);
         public event MessageHandler MessageReceived;
 
-        public MyControl()
+        public MyWpfControl()
         {
             InitializeComponent();
         }

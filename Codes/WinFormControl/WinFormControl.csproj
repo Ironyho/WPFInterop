@@ -48,18 +48,18 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MyUserControl.cs">
+    <Compile Include="MyWinFormControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="MyUserControl.Designer.cs">
-      <DependentUpon>MyUserControl.cs</DependentUpon>
+    <Compile Include="MyWinFormControl.Designer.cs">
+      <DependentUpon>MyWinFormControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="MyUserControl.resx">
-      <DependentUpon>MyUserControl.cs</DependentUpon>
+    <EmbeddedResource Include="MyWinFormControl.resx">
+      <DependentUpon>MyWinFormControl.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

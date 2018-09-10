@@ -47,12 +47,12 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="MyControl.xaml">
+    <Page Include="MyWpfControl.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Compile Include="MyControl.xaml.cs">
-      <DependentUpon>MyControl.xaml</DependentUpon>
+    <Compile Include="MyWpfControl.xaml.cs">
+      <DependentUpon>MyWpfControl.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Page Include="MyWindow.xaml">
